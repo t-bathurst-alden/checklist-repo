@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#main-content {
+    background-image: url('../images/background-image.jpg');
+    background-position: center;
+    background-blend-mode:multiply;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+
+}
+
+article {
+    width: 400px;
+    border: 4px solid red;
+    border-radius: 15spx;
+    margin: 20px;
+    background-color: black;
+}
+
+article h2 {
+    color: #E00043;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+}
+
+article:first-of-type {
+    border: 4px solid #820021;
+}
+
+#todo h2{
+    color: #1AFFFB;
+}
+
+#todo {
+    border: 4px solid #00918E;
+}
+
+#inprogress h2 {
+    color: #1A92FF;
+}
+
+#inprogress {
+    border: 4px solid #004D91;
+}
+
+#done {
+    border: 4px solid #00118C;
+}
+
+#done h2 {
+
+    color: #001DFF;
+}
+ul {
+    list-style-type: none;
+display: inline;
+justify-content: center;
+}
+
+ul li {
+    padding: 10px;
+}
+
+.todo li:nth-child(odd) {
+    background-color: #98CCD9;
+}
+.todo li:nth-child(even) {
+    background-color: #7AB1BF;
+}
+
+.inprogress li:nth-child(odd) {
+    background-color: #98AED9;
+}
+
+.inprogress li:nth-child(even) {
+    background-color: #768BB5;
+}
+
+.done li:nth-child(odd) {
+    background-color: #475AA1;
+}
+
+.done li:nth-child(even) {
+    background-color: #334382;
+}
+
+
+input[type="checkbox"]:checked + span::after {
+content: "🥳";
+}
+
+input[type="checkbox"]:checked + ::after
+
+input {
+    cursor: pointer;
+}
